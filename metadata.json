@@ -1,0 +1,6 @@
+{
+  "name": "Service Cam",
+  "description": "Body cam video streaming, privacy downtime management, secure API access & central home system signal logging",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
