@@ -27,7 +27,7 @@ abstract class ServiceCamDatabase : RoomDatabase() {
                     context.applicationContext,
                     ServiceCamDatabase::class.java,
                     "service_cam_db"
-                ).fallbackToDestructiveMigration()
+                ).fallbackToDestructiveMigration(true)
                  .build()
                 INSTANCE = instance
                 instance

@@ -22,11 +22,11 @@ import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Code
 import androidx.compose.material.icons.filled.Key
 import androidx.compose.material.icons.filled.Lock
+import androidx.compose.material.icons.automirrored.filled.Send
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material.icons.filled.Save
 import androidx.compose.material.icons.filled.Security
-import androidx.compose.material.icons.filled.Send
 import androidx.compose.material.icons.filled.Shield
 import androidx.compose.material.icons.filled.VpnKey
 import androidx.compose.material3.AlertDialog
@@ -148,7 +148,7 @@ fun ApiSecurityScreen(viewModel: ServiceCamViewModel) {
                             onValueChange = {},
                             readOnly = true,
                             label = { Text("Select API Endpoint") },
-                            leadingIcon = { Icon(Icons.Default.Send, contentDescription = null, tint = CyanAccent) },
+                            leadingIcon = { Icon(Icons.AutoMirrored.Filled.Send, contentDescription = null, tint = CyanAccent) },
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .clickable { endpointMenuExpanded = true }
@@ -311,7 +311,7 @@ fun ApiSecurityScreen(viewModel: ServiceCamViewModel) {
                             modifier = Modifier.testTag("use_key_${keyEntity.id}")
                         ) {
                             Icon(
-                                imageVector = Icons.Default.Send,
+                                imageVector = Icons.AutoMirrored.Filled.Send,
                                 contentDescription = "Use in Sandbox",
                                 tint = CyanAccent,
                                 modifier = Modifier.size(18.dp)

@@ -24,7 +24,7 @@ import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.Coffee
 import androidx.compose.material.icons.filled.DirectionsRun
 import androidx.compose.material.icons.filled.LocationOn
-import androidx.compose.material.icons.filled.Note
+import androidx.compose.material.icons.automirrored.filled.Note
 import androidx.compose.material.icons.filled.PauseCircle
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Restaurant
@@ -328,7 +328,7 @@ fun PrivacyBreaksScreen(viewModel: ServiceCamViewModel) {
                             value = customNote,
                             onValueChange = { customNote = it },
                             label = { Text("Optional Downtime Note / Supervisor Info") },
-                            leadingIcon = { Icon(Icons.Default.Note, contentDescription = null, tint = CyanAccent) },
+                            leadingIcon = { Icon(Icons.AutoMirrored.Filled.Note, contentDescription = null, tint = CyanAccent) },
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .testTag("downtime_note_input"),
